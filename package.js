@@ -9,11 +9,11 @@ Package.onUse(function(api){
 
   both = ['client','server'];
 
-  api.versionsFrom('METEOR@1.2.1');
+  api.versionsFrom('1.2.1');
+  api.use('ecmascript');
 
   api.use(
-    ['iron:router@1.0.9',
-    'coffeescript',
+    ['iron:router',
     'underscore',
     'reactive-var',
     'aldeed:collection2@2.5.0',
@@ -26,7 +26,7 @@ Package.onUse(function(api){
     'aldeed:tabular@1.4.0',
     'meteorhacks:unblock@1.1.0',
     'zimme:active-route@2.3.2',
-    'mfactory:admin-lte@0.0.2'
+    'mfactory:admin-lte'
     ],
     both);
 
