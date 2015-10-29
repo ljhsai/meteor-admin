@@ -2,14 +2,14 @@ Package.describe({
   name: "luson:admin",
   summary: "A complete admin dashboard solution",
   version: "1.2.3",
-  git: "https://github.com/yogiben/meteor-admin"
+  git: "https://github.com/ljhsai/meteor-admin"
 });
 
-Package.on_use(function(api){
+Package.onUse(function(api){
 
   both = ['client','server'];
 
-  api.versionsFrom('METEOR@1.0');
+  api.versionsFrom('METEOR@1.2.1');
 
   api.use(
     ['iron:router@1.0.9',
@@ -32,7 +32,7 @@ Package.on_use(function(api){
 
   api.use(['less@1.0.0 || 2.5.0','session','jquery','templating'],'client');
 
-  api.use(['email'],'server')
+  api.use(['email'],'server');
 
   api.add_files([
     'lib/both/AdminDashboard.js',
@@ -63,4 +63,8 @@ Package.on_use(function(api){
     ], 'server');
 
   api.export('AdminDashboard',both)
+});
+
+Package.onTest(function (api) {
+
 });
