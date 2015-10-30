@@ -1,7 +1,7 @@
 Package.describe({
   name: "luson:admin",
   summary: "A complete admin dashboard solution",
-  version: "0.1",
+  version: "0.1.0",
   git: "https://github.com/ljhsai/meteor-admin"
 });
 
