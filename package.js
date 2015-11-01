@@ -37,7 +37,7 @@ Package.onUse(function (api) {
 
     api.use(['email'], 'server');
 
-    api.add_files("package-tap.i18n", both);
+    api.add_files("project-tap.i18n", both);
     api.add_files([
         'i18n/en.i18n.json',
         'i18n/zh.i18n.json'
