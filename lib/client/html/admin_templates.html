@@ -97,7 +97,7 @@
             <hr/>
             {{/if}}
 
-            <h4>User Roles</h4>
+            <h4>{{_ "userRoles"}}</h4>
             {{#each roles}}
             <button class="btn btn-primary btn-xs btn-remove-role" role="{{this}}" user="{{admin_current_id}}">
                 {{this}}
@@ -114,7 +114,7 @@
             {{/if}}
 
             <hr/>
-            <h4>Reset Password</h4>
+            <h4>{{_ "resetPassword"}}</h4>
             {{#autoForm id="adminSendResetPasswordEmail" schema=AdminSchemas.sendResetPasswordEmail type="method"
             meteormethod="adminSendResetPasswordEmail"}}
             <div class="form-group hidden">
