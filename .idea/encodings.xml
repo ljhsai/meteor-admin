@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/i18n/en.i18n.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/i18n/zh.i18n.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lib/both/AdminDashboard.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lib/both/collections.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lib/both/router.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lib/both/startup.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lib/both/utils.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lib/client/html/admin_header.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lib/client/html/admin_layouts.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lib/client/html/admin_sidebar.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lib/client/html/admin_templates.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lib/client/html/admin_widgets.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lib/client/js/admin_layout.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lib/client/js/autoForm.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lib/client/js/events.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lib/client/js/helpers.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lib/client/js/slim_scroll.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lib/client/js/templates.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lib/server/methods.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lib/server/publish.js" charset="UTF-8" />
+  </component>
+</project>
