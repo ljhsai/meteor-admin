@@ -1,7 +1,5 @@
 {
+    "translation_function_name": "__",
     "helper_name": "_",
-    "supported_languages": null,
-    "i18n_files_route": "/i18n",
-    "cdn_path": null,
-    "preloaded_langs": []
+    "namespace": null
 }
