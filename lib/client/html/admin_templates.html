@@ -48,19 +48,19 @@
 <template name="AdminDashboardView">
     {{> adminAlert}}
     {{#if adminTemplate admin_collection_name 'view'}}
-    {{#with adminTemplate admin_collection_name 'view'}}
-    {{> UI.dynamic template=name data=data }}
-    {{/with}}
+        {{#with adminTemplate admin_collection_name 'view'}}
+            {{> UI.dynamic template=name data=data }}
+        {{/with}}
     {{else}}
-    {{#if hasDocuments}}
-    {{> tabular table=admin_table class="table dataTable"}}
-    {{else}}
-    <div class="alert alert-info">
-        <p>There are no visible items in this collection.</p>
+        {{#if hasDocuments}}
+            {{> tabular table=admin_table class="table dataTable"}}
+        {{else}}
+            <div class="alert alert-info">
+                <p>{{_ "alert"}}</p>
 
-        <p><a href="{{newPath}}" class="btn btn-primary"><i class="fa fa-plus"></i> Add one</a></p>
-    </div>
-    {{/if}}
+                <p><a href="{{newPath}}" class="btn btn-primary"><i class="fa fa-plus"></i>{{_ "addOne"}}</a></p>
+            </div>
+        {{/if}}
     {{/if}}
 </template>
 
@@ -80,7 +80,7 @@
 
             {{/if}}
 
-            <button type="submit" class="btn btn-primary">Add User</button>
+            <button type="submit" class="btn btn-primary">{{_ "addUser"}}</button>
 
             {{/autoForm}}
         </div>
@@ -108,9 +108,9 @@
             </button>
             {{/each}}
             {{#if roles}}
-            <p style="margin-top:5px;">Click a role to toggle it.</p>
+            <p style="margin-top:5px;">{{_ "clickRole"}}.</p>
             {{else}}
-            <p>User not in any roles. Click a role to add it to a user.</p>
+            <p>{{_ "noRole"}}</p>
             {{/if}}
 
             <hr/>
@@ -123,12 +123,12 @@
                        data-schema-key="_id" class="form-control" autocomplete="off"/>
                 <span class="help-block"></span>
             </div>
-            <p>Send a reset password email to {{admin_current_doc.emails.[0].address}}</p>
-            <button type="submit" class="btn btn-primary btn-sm">Send Email</button>
+            <p>{{_ "SendResetemail"}} {{admin_current_doc.emails.[0].address}}</p>
+            <button type="submit" class="btn btn-primary btn-sm">{{_ "sendEmail"}}</button>
             {{/autoForm}}
 
             <hr/>
-            <h4>Change Password</h4>
+            <h4>{{_ "changePassword"}}</h4>
             {{#autoForm id="adminChangePassword" schema=AdminSchemas.changePassword type="method"
             meteormethod="adminChangePassword"}}
             <div class="form-group hidden">
@@ -138,7 +138,7 @@
                 <span class="help-block"></span>
             </div>
             {{>afQuickField name="password"}}
-            <button type="submit" class="btn btn-primary btn-sm">Change Password</button>
+            <button type="submit" class="btn btn-primary btn-sm">{{_ "changePassword"}}</button>
             {{/autoForm}}
         </div>
     </div>
@@ -168,12 +168,12 @@
 
 <template name="adminEditBtn">
     <a href="{{path}}" class="hidden-xs btn btn-xs btn-primary"><i class="fa fa-pencil"></i></a>
-    <a href="{{path}}" class="visible-xs btn btn-sm btn-primary"><i class="fa fa-pencil"></i> Edit</a>
+    <a href="{{path}}" class="visible-xs btn btn-sm btn-primary"><i class="fa fa-pencil"></i>{{_ "edit"}}</a>
 </template>
 
 <template name="adminDeleteBtn">
     <a data-toggle="modal" doc="{{_id}}" href='#admin-delete-modal'
        class="hidden-xs btn btn-xs btn-danger btn-delete"><i class="fa fa-times" doc="{{_id}}"></i></a>
-    <a data-toggle="modal" doc="{{_id}}" href='#admin-delete-modal' class="visible-xs btn btn-sm btn-danger btn-delete"><i
-            class="fa fa-times" doc="{{_id}}"></i> Delete</a>
+    <a data-toggle="modal" doc="{{_id}}" href='#admin-delete-modal'
+       class="visible-xs btn btn-sm btn-danger btn-delete"><i class="fa fa-times" doc="{{_id}}"></i>{{_ "delete"}}</a>
 </template>

@@ -17,6 +17,7 @@ Package.onUse(function (api) {
             'iron:router',
             'check',
             'underscore',
+            'tap:i18n',
             'reactive-var',
             'aldeed:collection2@2.5.0',
             'aldeed:autoform@5.5.1',
